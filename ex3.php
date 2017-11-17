@@ -9,7 +9,7 @@ ini_set('display_errors', 1);
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ex 1</title>
+    <title>Ex 3</title>
   </head>
   <body>
     <h2>20 first clients</h2>
