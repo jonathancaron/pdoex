@@ -9,18 +9,19 @@ ini_set('display_errors', 1);
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ex 1</title>
+    <title>Ex 2</title>
   </head>
   <body>
+    <h2>Types de show possibles :</h2>
     <?php
-    $query=$bdd->prepare('SELECT id, lastName, firstName FROM clients ORDER by id');
+    $query=$bdd->prepare('SELECT id, type FROM showTypes ORDER by id');
     $query->execute();
     while($data = $query->fetch(PDO::FETCH_ASSOC)){
       $id = $data['id'];
-      $lastName = $data['lastName'];
-      $firstName = $data['firstName'];
+      $type = $data['type'];
 
-      echo $lastName . ' ' . $firstName . '<br>';
+
+      echo $type . '<br>';
 
     }
     $query->CloseCursor();
